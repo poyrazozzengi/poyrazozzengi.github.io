@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Profile - Poyraz Özzengi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
         }
         header {
-            background-color: #f4f4f4;
-            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
             text-align: center;
         }
+        .emoji {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
         nav {
-            margin: 0;
-            padding: 10px;
-            background: #333;
+            background-color: #444;
+            padding: 15px;
             text-align: center;
         }
         nav a {
@@ -27,21 +32,44 @@
             margin: 0 15px;
             text-decoration: none;
             font-size: 18px;
+            text-transform: capitalize;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f4f4f4;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
         }
         h1, h2 {
             color: #333;
         }
-        .emoji {
-            font-size: 1.5rem;
+        h1 {
+            margin-bottom: 5px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        p, ul {
+            font-size: 18px;
+            color: #555;
         }
         footer {
-            background-color: #f4f4f4;
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -49,30 +77,36 @@
 
 <header>
     <h1>Poyraz Özzengi</h1>
+    <p>AP Computer Science Student | Tech Enthusiast</p>
     <div class="emoji">💻  📚</div>
 </header>
 
 <nav>
-    <a href="#home">home</a>
-    
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#recently">Recently</a>
 </nav>
 
 <section id="about">
     <h2>About Me</h2>
-    <p>Hi there! 👋 I am a sophomore studying in Hisar Schools</p>
-
-    
+    <p>Hi there! 👋 I am Poyraz, a sophomore at Hisar Schools with a passion for technology and programming. I’m currently taking the AP Computer Science Principles course, where I get to explore various exciting concepts in computing. I also enjoy working on side projects related to web development, algorithms, and more.</p>
 </section>
 
 <section id="recently">
     <h2>Recently...</h2>
     <ul>
-        <li>→ I am taking the Ap Computer Science Principles class and you can see the things I did throughout this year. </li>
-        
+        <li>→ Currently enrolled in the AP Computer Science Principles course, where I've been learning about algorithms, data structures, and basic web development.</li>
+        <li>→ Working on coding projects and improving my programming skills in languages like Python, C, and JavaScript.</li>
+        <li>→ Participating in coding challenges and exploring new areas in computer science.</li>
     </ul>
 </section>
 
-
+<footer>
+    <p>Connect with me: 
+        <a href="mailto:poyraz@example.com">Email</a> | 
+        <a href="https://linkedin.com/in/poyraz">LinkedIn</a>
+    </p>
+</footer>
 
 </body>
 </html>
