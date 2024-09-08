@@ -49,17 +49,8 @@
             max-width: 800px;
             margin: auto;
         }
-        h1 {
-            color: #fff
-        
-        h2 {
+        h1, h2 {
             color: #333;
-        }
-        h1 {
-            margin-bottom: 5px;
-        }
-        h2 {
-            margin-top: 0;
         }
         p, ul {
             font-size: 18px;
@@ -68,6 +59,14 @@
         ul {
             list-style: none;
             padding: 0;
+        }
+        .completed {
+            color: green;
+            font-weight: bold;
+        }
+        .not-completed {
+            color: red;
+            font-weight: bold;
         }
         footer {
             background-color: #333;
@@ -92,21 +91,29 @@
 <header>
     <h1>Poyraz Özzengi</h1>
     <p>AP Computer Science Student | Tech Enthusiast</p>
-    <div class="emoji">💻  📚</div>
+    <div class="emoji">💻 📚</div>
 </header>
 
 <nav>
     <a href="index.html">Back to Home</a>
 </nav>
 
-<section id="about">
-    <h2>CS50 Course </h2>
-    <p>Geliyor</p>
-</section>
-
-<section id="What did I do in CS50?">
-    <h2>What did I do in CS50?</h2>
- 
+<section id="course-progress">
+    <h2>CS50 Course Progress</h2>
+    <ul>
+        <li>Week 0: Scratch - <span class="completed">Completed ✅</span></li>
+        <li>Week 1: C - <span class="completed">Completed ✅</span></li>
+        <li>Week 2: Arrays - <span class="completed">Completed ✅</span></li>
+        <li>Week 3: Algorithms - <span class="completed">Completed ✅</span></li>
+        <li>Week 4: Memory - <span class="completed">Completed ✅</span></li>
+        <li>Week 5: Data Structures - <span class="not-completed">In Progress 🔄</span></li>
+        <li>Week 6: Python - <span class="not-completed">Not Started ❌</span></li>
+        <li>Week 6.5: Artificial Intelligence - <span class="not-completed">Not Started ❌</span></li>
+        <li>Week 7: SQL - <span class="not-completed">Not Started ❌</span></li>
+        <li>Week 8: HTML, CSS, JavaScript - <span class="not-completed">Not Started ❌</span></li>
+        <li>Week 9: Flask - <span class="not-completed">Not Started ❌</span></li>
+        <li>Week 10: Cybersecurity - <span class="not-completed">Not Started ❌</span></li>
+    </ul>
 </section>
 
 <footer>
